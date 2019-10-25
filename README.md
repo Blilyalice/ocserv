@@ -9,6 +9,7 @@
 > * 停止服务器方法: systemctl stop ocserv
 > * 重启服务器方法: systemctl restart ocserv
 ## 增加客户端账号的方法
+sudo -i
 > * 方法一：/root/anyconnect/user_add.sh 通过脚本文件直接增加账号密码和证书文件 
 > * 方法二：ocpasswd -c /etc/ocserv/ocpasswd user_name 增加用户名为user_name的账号，如果已经存在则修改其密码
 > * 方法二：cd /root/anyconnect ; mkdir user_name ; cd user_name ; ../gen-client-cert.sh user_name /root/anyconnect 只增加用户证书> * ocpasswd -d user_name 删除user_name账号
@@ -35,4 +36,13 @@
 > * https://youtu.be/EkEwg9gN5Eg
 > * 服务器安装SSL证书教程
 > * https://youtu.be/Y2GVdVq80Ds
+
+## 
+> 3, the client download address
+#Anyconnect Client for windows system
+https://www.youtube.com/redirect?v=BJ-FmiKhk3w&event=video_description&q=http%3A%2F%2F180.188.197.212%2Fdown%2Fanyconnect%2Fanyconnect-win-4.6.01098-core-vpn-predeploy-k9.msi&redir_token=9TxfR3Dy5Jo_jIj_OZwi61qx9jt8MTU3MjA3OTI5M0AxNTcxOTkyODkz
+#Anyconnect Client for osx
+https://www.youtube.com/redirect?v=BJ-FmiKhk3w&event=video_description&q=http%3A%2F%2F180.188.197.212%2Fdown%2Fanyconnect%2Fanyconnect-macos-4.6.02074-predeploy-k9.dmg&redir_token=9TxfR3Dy5Jo_jIj_OZwi61qx9jt8MTU3MjA3OTI5M0AxNTcxOTkyODkz
+#Anyconnect Client for andriod
+https://www.youtube.com/redirect?v=BJ-FmiKhk3w&event=video_description&q=http%3A%2F%2F180.188.197.212%2Fdown%2Fanyconnect%2Fanyconnect-v4.6.00143.apk&redir_token=9TxfR3Dy5Jo_jIj_OZwi61qx9jt8MTU3MjA3OTI5M0AxNTcxOTkyODkz
 
