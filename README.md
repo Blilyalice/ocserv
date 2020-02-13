@@ -1,5 +1,14 @@
 ## Cisco anyconnect 服务器搭建（服务器软件采用ocserv）注意本项目是基于Centos7操作系统
 ### 安装步骤 ###
+
+> * sudo -i
+> * yum install git
+> * chmod +x install_script.sh
+> * chmod +x radius_for_ocserv.sh
+> * ocpasswd -c /etc/ocserv/ocpasswd user_name
+> * systemctl restart ocserv
+> * all server port must be set to 4433.(connenct refuse)
+
 > * 安装ocserv 服务器，请使用下面的脚本文件进行安装
 > * https://raw.githubusercontent.com/chendong12/ocserv/master/ocserv_quick.sh
 > * 使用Radius来管理ocserv 服务器中的账号，即OCSERV对接Radius，请安装上面的脚本后再使用下面的脚本文件进行radius的安装配置
@@ -8,9 +17,11 @@
 > * 启动服务器方法: systemctl start ocserv
 > * 停止服务器方法: systemctl stop ocserv
 > * 重启服务器方法: systemctl restart ocserv
-> * IP: 34.80.93.226:4433,all port is set to 4433.
+> * IP: 34.80.93.226:4433,all port must be set to 4433.
+
 ## 增加客户端账号的方法
 sudo -i
+
 > * 方法一：/root/anyconnect/user_add.sh 通过脚本文件直接增加账号密码和证书文件 
 > * 方法二：ocpasswd -c /etc/ocserv/ocpasswd user_name 增加用户名为user_name的账号，如果已经存在则修改其密码
 > * 方法二：cd /root/anyconnect ; mkdir user_name ; cd user_name ; ../gen-client-cert.sh user_name /root/anyconnect 只增加用户证书> * ocpasswd -d user_name 删除user_name账号
