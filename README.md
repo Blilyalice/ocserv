@@ -8,6 +8,7 @@
 > * 启动服务器方法: systemctl start ocserv
 > * 停止服务器方法: systemctl stop ocserv
 > * 重启服务器方法: systemctl restart ocserv
+> * IP: 34.80.93.226:4433,all port is set to 4433.
 ## 增加客户端账号的方法
 sudo -i
 > * 方法一：/root/anyconnect/user_add.sh 通过脚本文件直接增加账号密码和证书文件 
