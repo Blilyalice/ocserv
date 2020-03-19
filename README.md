@@ -1,5 +1,5 @@
-## Cisco anyconnect 服务器搭建（服务器软件采用ocserv）注意本项目是基于Centos7操作系统
-### 安装步骤 ###
+## Cisco anyconnect setup based on Centos7 os.
+### setup steps ###
 
 > * sudo -i
 > * yum install git
@@ -9,9 +9,9 @@
 > * systemctl restart ocserv
 > * all server port must be set to 4433.(connenct refuse)
 
-> * 安装ocserv 服务器，请使用下面的脚本文件进行安装
+> * setup ocserv server，please use blow link to download and perform shell script.
 > * https://raw.githubusercontent.com/chendong12/ocserv/master/ocserv_quick.sh
-> * 使用Radius来管理ocserv 服务器中的账号，即OCSERV对接Radius，请安装上面的脚本后再使用下面的脚本文件进行radius的安装配置
+> * use Radius to manage ocserv account.
 > * https://github.com/chendong12/ocserv/blob/master/ocserv_radius_quickinstall.sh
 ## 服务器操作常用方法 ##
 > * 启动服务器方法: systemctl start ocserv
